@@ -1,3 +1,4 @@
+<%@page import="java.util.Date"%>
 <%@page import="web.CreditModel"%>
 <%
 	CreditModel mod = (CreditModel)request.getAttribute("mod");
@@ -10,6 +11,7 @@
 <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/css/style.css"/>
 </head>
 <body>
+	<h1 align="center"><marquee>Bienvenue aimable clientèle, nous sommes le<%= new Date().toString() %></marquee></h1>
 	<div>
 		<form action="controleur.php" method="post">
 			<table>
